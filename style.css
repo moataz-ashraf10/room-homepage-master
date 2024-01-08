@@ -1,0 +1,133 @@
+body{
+    font-family: 'League Spartan', sans-serif;
+    overflow-x: hidden;
+}
+html{
+    overflow-x: hidden;
+}
+.nav ul{
+    list-style: none;
+    display: flex;
+    flex-flow: row wrap;
+    position: absolute;
+}
+.nav ul li{
+    padding: 5px;
+    margin: 10px;
+    color: white;
+    transition: all 0.5s ease;
+    cursor: pointer;
+}
+.nav ul li:hover{
+    color: black;
+}
+.nav ul li:nth-child(1){
+    font-size: 25px;
+    margin-top: 5px;
+}
+.containt ul{
+    list-style: none;
+    display: flex;
+    flex-flow: row nowrap;
+    padding: 0px;
+    width: 100%;
+    margin: 0px;
+}
+.containt ul li:nth-child(1){
+    width: 900px;
+    height: 50%;
+    margin-left: -8px;
+    margin-top: -8px;
+
+}
+.containt ul li img{
+    width: 100%;
+    height:480PX;
+}
+.containt ul li:nth-child(2){
+    width: 610px;
+    margin: 0px;
+    background-color:white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column nowrap;
+    position: relative;
+}
+.containt ul li p{
+    width: 70%;
+    text-align: center;
+    opacity: .5;
+    text-wrap: balance;
+}
+.containt ul li h1{
+    width: 70%;
+    text-align: center;
+    text-wrap: balance;
+
+}
+.ll{
+    cursor: pointer;
+    letter-spacing: 2rem;
+    font-size:20px;
+    font-weight: bold;
+    display: block;
+    color: black;
+    opacity: 1!important;
+}
+.containt .aa {
+    margin:-35px 0 0 350px ;
+    cursor: pointer;
+
+
+}
+.containt2 ul{
+    list-style: none;
+    display: flex;
+    flex-flow: row wrap;
+    margin: 0;
+    padding: 0;
+    margin-left: -8px;
+    margin-top: -4px;
+    justify-content: space-between;
+    
+}
+.containt2 ul li{
+    flex-grow: 1;
+    width: 500px;
+}
+.containt2 ul li img{
+    width: 100%;
+    height: 300px;
+}
+.containt2 ul li:nth-child(2){
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-wrap: balance;text-align: center;
+}
+@media (min-width: 300px) and (max-width: 818px) {
+    body{
+        overflow-x: hidden;
+    }
+    .containt ul{
+        flex-wrap: wrap;
+        text-align: center;
+    }
+    .containt ul li:nth-child(2){
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    .kl,.kl1{
+        margin-top: -10px;
+    }
+}
+@media (min-width: 300px) and (max-width: 426px){
+    .kl,.kl1{
+        width: 20px!important;
+        height: 20px!important;
+        margin-top: 40px;
+    }
+}
